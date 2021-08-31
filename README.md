@@ -1,10 +1,8 @@
-## mj-social-xt
+## mjml-social-xt
 
 Fork of mj-social with a few additional features.
 
 New attributes:
-
-### mj-social-xt
 
 `element-css-class`: CSS class to apply to `mj-social-element`'s `<table>`
 
