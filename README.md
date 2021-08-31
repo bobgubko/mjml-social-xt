@@ -1,37 +1,51 @@
-# mjml-component-boilerplate
+## mj-social-xt
 
-A boilerplate to quickly get started when creating your own component.  
+Fork of mj-social with a few additional features.
 
-3 examples can be found in */components*. Each of them introduce new features, so they should be checked in this order : MjBasicComponent, MjImageText, MjLayout.
+New attributes:
 
-For more complex examples, have a look at standard MJML components code such as [mj-carousel](https://github.com/mjmlio/mjml/tree/master/packages/mjml-accordion).
+### mj-social-xt
 
-## Getting started
+`element-css-class`: CSS class to apply to `mj-social-element`'s `<table>`
 
-A step-by-step tutorial is available [here](https://medium.com/mjml-making-responsive-email-easy/tutorial-creating-your-own-component-with-mjml-4-1c0e84e97b36).
-
-* Clone the repo
-* `npm install` inside
-* Add your component inside `components` folder
-* Add your component to the registrations in gulpfile.babel.js
-* Use your own component in `index.mjml`
-* `npm run build` to build, or `npm start` if you want to watch recompile on change you make (to your component or to `index.mjml`)
-* The result will be outputted in `index.html`
+`element-ghost-td-css-class`: CSS class to apply to `mj-social-element`'s parent ghost table
 
 
-## Later use of your component
+attribute                   | unit        | description                   | default value
+----------------------------|-------------|-------------------------------|---------------------------
+align                       | string      | left/right/center             | center
+border-radius               | px          | border radius                 | 3px
+color                       | color       | text color                    | #333333
+css-class                   | string      | class name, added to the root HTML element created (which is `<tr>`) | n/a
+container-background-color  | color       | inner element background color                     | n/a
+**element-css-class**       | string      | CSS class for a table containing the content of the social button | n/a
+**element-ghost-td-css-class**       | string      | CSS class for a ghost-cell containing the content of the social button. Ghost-cell is visible only in Outlook | n/a
+font-family                 | string      | font name                     | Ubuntu, Helvetica, Arial, sans-serif
+font-size                   | px/em       | font size                     | 13px
+font-style                  | string      | font style                    | normal
+font-weight                 | string      | font weight                   | normal
+icon-height                 | percent/px  | icon height, overrides icon-size | icon-size
+icon-size                   | percent/px  | icon size (width and height)  | 20px
+inner-padding               | px          | social network surrounding padding                 | 4px
+line-height                 | percent/px  | space between lines           | 22px
+mode                        | string      | vertical/horizontal           | horizontal
+padding                     | px          | supports up to 4 parameters                       | 10px 25px
+padding-bottom              | px          | bottom offset                    | n/a
+padding-left                | px          | left offset                      | n/a
+padding-right               | px          | right offset                       | n/a
+padding-top                 | px          | top offset                         | n/a
+icon-padding                | px          | padding around the icons      | 0px
+text-padding                | px          | padding around the texts      | 4px 4px 4px 0
+text-decoration             | string      | underline/overline/none       | none
 
-### In Node.js
-```js
+## Usage
+
+```
 import mjml2html from 'mjml'
 import { registerComponent } from 'mjml-core'
-import MyComponent from './components/MyComponent'
+import SocialXt from 'mjml-social-xt'
 
-registerComponent(MyComponent)
+registerComponent(SocialXt)
 
 const { html, errors } = mjml2html(mjmlString)
 ```
-
-### With the cli
-
-Using custom components with the CLI is not ready yet.

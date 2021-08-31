@@ -1,26 +1,9 @@
 <mjml>
   <mj-body>
 
-    <!-- The first component, mj-basic-component renders as a column child -->
-    <mj-section>
-      <mj-column>
-        <mj-basic-component color="green">
-          I'm among stars
-        </mj-basic-component>
-      </mj-column>
-    </mj-section>
-
-    <!-- The second component, mj-image-text renders as a section -->
-    <mj-image-text background-color="#DD685B" image-src="https://mjml.io/assets/img/mjml-logo.png" image-width="100px" font-size="24px" image-position="left">
-      MJML rules! hello modified
-    </mj-image-text>
-
-    <!-- The third component, mj-layout, also renders as a section -->
-    <mj-layout>
-      <mj-text color="blue" font-size="10px">
-        A super nice layout component
-      </mj-text>
-    </mj-layout>
+    <mj-social-xt element-css-class="element-css" element-ghost-td-css-class="element-ghost-css">
+      <mj-social-element name="google" href="https://example.com">Google</mj-social-element>
+    </mj-social-xt>
 
   </mj-body>
 </mjml>

@@ -1,12 +1,13 @@
 {
-  "name": "test",
+  "name": "mjml-social-xt",
   "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
     "start": "gulp watch",
     "build": "gulp build",
-    "lint": "eslint components"
+    "lint": "eslint components",
+    "postinstall": "gulp build"
   },
   "author": "",
   "license": "ISC",
