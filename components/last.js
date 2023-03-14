@@ -1,8 +1,8 @@
 import { BodyComponent } from 'mjml-core'
 import { isNil } from 'lodash'
 
-export default class MjSocialXt extends BodyComponent {
-  static componentName = 'mj-social-xt'
+export default class MjSocial extends BodyComponent {
+  static componentName = 'mj-social'
 
   static allowedAttributes = {
     align: 'enum(left,right,center)',
@@ -103,17 +103,12 @@ export default class MjSocialXt extends BodyComponent {
           ? component.render()
           : `
             <!--[if mso | IE]>
-              <td
-                ${this.htmlAttributes({
-            class: this.getAttribute('element-ghost-td-css-class'),
-          })}
-              >
+              <td>
             <![endif]-->
               <table
                 ${component.htmlAttributes({
             align: this.getAttribute('align'),
             border: '0',
-            class: this.getAttribute('element-css-class'),
             cellpadding: '0',
             cellspacing: '0',
             role: 'presentation',
