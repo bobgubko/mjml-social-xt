@@ -1,1 +1,1 @@
-module.exports.SocialXt = require('./lib/MjSocialXt').default;
+module.exports = require('./lib/MjSocialXt').default;

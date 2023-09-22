@@ -1,6 +1,6 @@
 {
   "name": "mjml-social-xt",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -30,13 +30,13 @@
   },
   "dependencies": {
     "lodash": "^4.17.15",
-    "mjml": "^4.7.1",
-    "mjml-core": "^4.13.0"
+    "mjml": "^4.14.1",
+    "mjml-core": "^4.14.1"
   },
   "types": "lib/MjSocialXt.d.ts",
   "exports": {
     "types": "./lib/MjSocialXt.d.ts",
-    "import": "./lib/MjSocialXt.js",
-    "node": "./lib/MjSocialXt.js"
+    "import": "./index.js",
+    "node": "./index.js"
   }
 }
