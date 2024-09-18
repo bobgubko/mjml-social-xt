@@ -1,6 +1,6 @@
 ## mjml-social-xt
 
-Fork of mj-social with a few additional features.
+Fork of mj-social component with a few additional features.
 
 New attributes:
 
